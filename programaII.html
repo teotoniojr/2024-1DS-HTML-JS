@@ -17,13 +17,14 @@
             pulaLinha()
         }
 
-        let pesoTeo = 74
-        let alturaTeo = 1.71
+        function calcularIMC(peso, altura){
+            return imc = peso/(altura*altura)
+        }
 
-        let imcTeo = pesoTeo/(alturaTeo*alturaTeo)
+        let imcTeo = calcularIMC(72, 1.71)
 
-        mostra(` O IMC de Teotonio é ${imcTeo}`) //template string
-        mostra(' O IMC de Teotonio é ' + imcTeo) //concatenação normal
+        mostra('O IMC de Teotonio é: ' + imcTeo)
+
     </script>
 </body>
 </html>

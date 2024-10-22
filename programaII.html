@@ -21,9 +21,22 @@
             return imc = peso/(altura*altura)
         }
 
-        let imcTeo = calcularIMC(72, 1.71)
+        let nome = prompt('Qual o seu nome?')
+        let alturaInformada = prompt(`${nome}, qual sua altura? (Utilize ponto no lugar de vírgula)`)
+        let pesoInformado = prompt(`${nome}, qual seu peso? `)
+        
+        let imcCalculado = calcularIMC(pesoInformado, alturaInformada)
 
-        mostra('O IMC de Teotonio é: ' + imcTeo)
+        mostra(`${nome}, seu IMC é de ${imcCalculado}`)
+
+        if(imcCalculado > 25){
+            mostra(`${nome}, o seu IMC está acima do ideal`)
+        } else if(imcCalculado < 18){
+            mostra(`${nome}, o seu IMC está abaixo do ideal`)
+        } else {
+            mostra(`${nome}, o seu IMC está ideal`)
+        }
+
 
     </script>
 </body>

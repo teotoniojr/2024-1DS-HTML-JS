@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --fonte-titulo:"Anton SC", sans-serif;
+    --fonte-texto: "DM Sans", sans-serif;
+    --cor1: #8ecae6ff;
+    --cor2: #219ebcff;
+    --cor3: #023047ff;
+    --cor4: #ffb703ff;
+    --cor5: #fb8500ff;
+    --cor6: #f1f1f1; 
+    --cor7: #000000;
+}
+
+body{
+    background-color: var(--cor1);
+    font-family: var(--fonte-texto);
+}
+
+header, footer{
+    background-color: var(--cor3);
+    padding: 2em;
+    color: var(--cor6);
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 1.5em;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--cor4);
+}
